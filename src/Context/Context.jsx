@@ -30,6 +30,9 @@ const Context = (props) => {
         }else{
             alert('Please enter valid details!')
         }
+
+        nameRef.current.value = "";
+        costRef.current.value = "";
     }
 
     const dltItem = (e) => {
@@ -47,7 +50,6 @@ const Context = (props) => {
         setTotalExpense(()=>{
             let list = JSON.parse(localStorage.getItem("expenses")) || [];
             let sum = list.reduce((initialValue, currentValue) => {
-                console.log(Number(initialValue) + Number(currentValue.cost));
                 return Number(initialValue) + Number(currentValue.cost);
             }, 0);
             return sum;
