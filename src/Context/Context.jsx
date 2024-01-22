@@ -28,7 +28,7 @@ const Context = (props) => {
                 return newList;
             });
         }else{
-            alert('Please enter a valid details!')
+            alert('Please enter valid details!')
         }
     }
 
