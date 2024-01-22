@@ -4,7 +4,7 @@ import Context from './Context/Context'
 import BudgetPlanner from './Components/BudgetPlanner/BudgetPlanner'
 
 function App() {
-  const [count, setCount] = useState(0)
+  document.title = "Budget Planner";
 
   return (
     <>
