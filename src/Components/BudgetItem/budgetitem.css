@@ -1,0 +1,15 @@
+.budgetItem{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.amountAndDlt{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}

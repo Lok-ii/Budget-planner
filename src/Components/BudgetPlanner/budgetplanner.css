@@ -1,0 +1,85 @@
+.budgetPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.budgetCalculation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.totalBudget, .remainingBudget, .spent{
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.nameContainer, .amountContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+input{
+    height: 2.8rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+}
+
+.expenseContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+
+.expenseList{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+    overflow-y: scroll;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

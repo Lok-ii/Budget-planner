@@ -1,5 +1,6 @@
 import React from "react";
 import { useBudget } from "../../Context/Context";
+import "./budgetitem.css";
 
 const BudgetItem = (props) => {
   const budgetCtx = useBudget();

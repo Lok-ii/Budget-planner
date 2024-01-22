@@ -1,6 +1,7 @@
 import React from "react";
 import { useBudget } from "../../Context/Context";
 import BudgetItem from "../BudgetItem/BudgetItem";
+import "./budgetplanner.css";
 
 const BudgetPlanner = () => {
   const budgetCtx = useBudget();
@@ -35,7 +36,7 @@ const BudgetPlanner = () => {
       </form>
 
       <div className="expenseContainer">
-        <p className="expenseHead">Expenses</p>
+        <h1 className="expenseHead">Expenses</h1>
         <div className="expenseList">
           {budgetCtx.expenseList.length === 0 ? (
             <p className="noData">Add Data to List . . . .</p>
