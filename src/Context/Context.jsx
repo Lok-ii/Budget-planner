@@ -15,6 +15,7 @@ const Context = (props) => {
 
     useEffect(() => {
         setList((prev) => JSON.parse(localStorage.getItem("expenses")) || prev);
+        calculateExpenses();
     }, []);
 
     const submitHandler = (e) =>{
@@ -44,8 +45,10 @@ const Context = (props) => {
 
     const calculateExpenses = () => {
         setTotalExpense(()=>{
-            let sum = expenseList.reduce((curr, val) => {
-                return curr + val;
+            let list = JSON.parse(localStorage.getItem("expenses")) || [];
+            let sum = list.reduce((initialValue, currentValue) => {
+                console.log(Number(initialValue) + Number(currentValue.cost));
+                return Number(initialValue) + Number(currentValue.cost);
             }, 0);
             return sum;
         })
