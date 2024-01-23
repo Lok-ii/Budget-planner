@@ -1,5 +1,6 @@
 import React from "react";
 import { useBudget } from "../../Context/Context";
+import { MdDelete } from "react-icons/md";
 import "./budgetitem.css";
 
 const BudgetItem = (props) => {
@@ -16,7 +17,7 @@ const BudgetItem = (props) => {
           }}
           id={props.idx}
         >
-          dlt
+          <MdDelete />
         </button>
       </div>
     </div>
